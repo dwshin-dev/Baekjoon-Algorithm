@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 {
 	int n, m;
 
-	long long five = 0;
+	long long five = 0; // mod
 	long long two = 0;
 
 	cin >> n;
