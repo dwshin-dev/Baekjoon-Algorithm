@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 			a[i] = s - a[i];
 	}
 
-	int ans = a[0];
+	int ans = a[0]; // first gcd
 
 	for (int i = 1; i < n; i++)
 	{
