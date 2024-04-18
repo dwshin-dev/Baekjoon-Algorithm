@@ -3,7 +3,7 @@ using namespace std;
 
 int a[100001];
 
-int func(int x, int y) {
+int func(int x, int y) { //gcd°ø½Ä
 	if (y == 0) return x;
 	else return func(y, x % y);
 }
