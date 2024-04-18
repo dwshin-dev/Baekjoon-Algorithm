@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 		if (a[i] > s)
 			a[i] = a[i] - s;
 		else
-			a[i] = s - a[i];
+			a[i] = s - a[i]; // abs(s - a[i]);
 	}
 
 	int ans = a[0]; // first gcd
