@@ -10,7 +10,7 @@ int main() {
 	int N, i, j;
 	int A[1000], len[1000], ans[1000];
 	cin >> N;
-
+	//이산수학
 	for (i = 0; i < N; i++)
 		cin >> A[i];
 
