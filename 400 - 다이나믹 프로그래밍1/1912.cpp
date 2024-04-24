@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 	
 	for (int i = 1; i <= n; i++) {
 		for(int j=i+1;j<=n;j++){
-			b[i] += a[j];
+			b[i] += a[j]; //i부터 j까지 더한 값들을 b[i]에 저장해준다.
 			if (dp[i] < b[i])
 				dp[i] = b[i];
 		}
