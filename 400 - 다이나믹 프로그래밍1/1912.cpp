@@ -9,11 +9,11 @@ int main(int argc, char* argv[])
 {
 	int n;
 	cin >> n; 
-	int ans = -1001; 
+	int ans = -1001; //n의 범위 -1000 < n < 100 이기 때문
 
 	for (int i = 1; i <= n; i++) {
-		cin >> a[i];
-		dp[i] = b[i] = a[i];
+		cin >> a[i]; 
+		dp[i] = b[i] = a[i]; // dp 와 b 에 a를 넣어준다.
 	}
 	
 	for (int i = 1; i <= n; i++) {
