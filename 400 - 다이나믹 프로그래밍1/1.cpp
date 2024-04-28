@@ -1,20 +1,24 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int dp[100001] = { 0, };
+#define MOD 1000000000
+int dp[201][201] = { 0, };
 
 int main(int argc, char* argv[])
 {
-	int n;
-	cin >> n;
-	for (int i = 0; i <= n; i++) dp[i] = i;
+	int n, k;
+	cin >> n >> k;
 
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j * j <= i; j++) {
-			dp[i] = min(dp[i], dp[i - j * j] + 1);
+	for (int i = 1; i <= k; i++) {
+		for (int j = 0; j <= n; j++) {
+			for (int m = 0; m <= j; m++) {
+				dp[i][j] += dp[i - 1][j - m];
+				dp[i][j] %= MOD;
+			}
 		}
 	}
-	cout << dp[n];
+
+	cout << dp[n][k];
 
 	return 0;
 }
