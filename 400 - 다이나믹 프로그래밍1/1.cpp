@@ -15,7 +15,11 @@ int main(int argc, char* argv[])
 				dp[i][j] += dp[i - 1][j - m];
 				dp[i][j] %= MOD;
 			}
+<<<<<<< HEAD
 		}//
+=======
+		}//sss
+>>>>>>> 928a92a8e292a75336b7c3398a8de6efad0fbf9c
 	}
 
 	cout << dp[n][k];
