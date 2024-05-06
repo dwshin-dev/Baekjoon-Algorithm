@@ -14,9 +14,9 @@ int main(int argc, char* argv[])
 			for (int m = 0; m <= j; m++) {
 				dp[i][j] += dp[i - 1][j - m];
 				dp[i][j] %= MOD;
-			}//aas
+			}//aasa
 	}
-
+		
 	cout << dp[n][k];
 
 	return 0;
